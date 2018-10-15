@@ -8,7 +8,7 @@
 </head>
 <body>
 	<p>欢迎来到德莱联盟，啊哈哈哈哈</p>
-	<a href="http://localhost:8888/ueditor/upload">upload
+	<a href="http://localhost:8888/ueditor/upload-img">upload
 	</a>
 </body>
 </html>
