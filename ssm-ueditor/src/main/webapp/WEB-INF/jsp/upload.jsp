@@ -32,10 +32,18 @@ body {
  
 <script>
     //ueditor编辑器
-    UE.getEditor('news', {
-    
-           autoHeightEnabled: true,
-           autoFloatEnabled: true
-       });
+    UE.getEditor('news');
+	console.log("start");
+	UE.Editor.prototype._bkGetActionUrl = UE.Editor.prototype.getActionUrl;
+	UE.Editor.prototype.getActionUrl = function (action) {
+	    if (action == 'uploadimage') {
+	        var url = "http://localhost:8888/ueditor/uploadimage";
+	        console.log(url);
+	        return url;
+	    } else {
+	    	
+	        return this._bkGetActionUrl.call(this, action);
+	    }
+	};
 </script>
 </html>

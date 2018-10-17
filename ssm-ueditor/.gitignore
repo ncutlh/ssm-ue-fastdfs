@@ -1,2 +1,8 @@
 /target/
 /.settings/
+.classpath
+.project
+.gitignore
+rebel.xml
+.springBeans
+.log

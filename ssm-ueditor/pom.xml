@@ -36,6 +36,8 @@
 		<freemarker.version>2.3.23</freemarker.version>
 		<quartz.version>2.2.2</quartz.version>
 		<ueditor.version>1.4.3.3</ueditor.version>
+		<json.version>20160810</json.version>
+		<commons-codec.version>1.9</commons-codec.version>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -159,23 +161,27 @@
 			<version>${commons-fileupload.version}</version>
 		</dependency>
 		<!-- UEditor -->
+		<!-- <dependency> <groupId>com.gitee.qdbp.thirdparty</groupId> <artifactId>ueditor</artifactId> 
+			<version>${ueditor.version}</version> </dependency> -->
 		<dependency>
-			<groupId>com.gitee.qdbp.thirdparty</groupId>
-			<artifactId>ueditor</artifactId>
-			<version>${ueditor.version}</version>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>${json.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${commons-codec.version}</version>
+		</dependency>
+
+
 		<!-- 添加FastDFS客户端的引用 -->
 		<dependency>
 			<groupId>fastdfs_client</groupId>
 			<artifactId>fastdfs_client</artifactId>
 			<version>1.25</version>
 		</dependency>
-		<!-- Jackson Json处理工具包 -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>${jackson.version}</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
